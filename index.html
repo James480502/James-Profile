@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>Panuwat Ainphuwa (James) – Talent Acquisition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Portfolio website of Panuwat Ainphuwa (James) – Talent Acquisition professional with experience in tech recruitment, sourcing, screening, and interview coordination.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --max-width: 880px;
+      --transition: 0.3s ease;
+    }
+
+    /* DARK THEME ONLY */
+    :root[data-theme='dark'] {
+      --bg: #020617;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #1e293b;
+      --accent: #60a5fa;
+      --tag-bg: #020617;
+      --card: #020617;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background: radial-gradient(circle at 0 0, #1f2937 0, #020617 55%);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 22px 60px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: var(--max-width);
+    }
+
+    /* HEADER */
+    header { margin-bottom: 40px; }
+
+    .name {
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin-bottom: 6px;
+    }
+
+    .headline {
+      font-size: 1rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .meta span + span::before {
+      content: "•";
+      margin: 0 8px;
+      color: var(--muted);
+    }
+
+    .links {
+      margin-top: 14px;
+      font-size: 0.95rem;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a + a::before {
+      content: "•";
+      margin: 0 8px;
+      color: var(--muted);
+    }
+
+    .btn-resume {
+      margin-top: 18px;
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(15,23,42,0.7);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.85rem;
+      backdrop-filter: blur(12px);
+    }
+
+    .btn-resume:hover {
+      background: var(--border);
+    }
+
+    .intro {
+      margin-top: 22px;
+      max-width: 720px;
+      line-height: 1.65;
+      font-size: 0.96rem;
+    }
+
+    /* Sections */
+    section {
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+      margin-top: 32px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .section-index {
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      opacity: 0.35;
+    }
+
+    h2 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .item { margin-bottom: 24px; }
+
+    .item-title { font-weight: 600; font-size: 1rem; }
+
+    .item-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 4px 0 8px;
+    }
+
+    ul { padding-left: 22px; font-size: 0.92rem; }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* Scroll Animation */
+    .fade-section {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity .6s ease-out, transform .6s ease-out;
+    }
+
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 640px) {
+      .name { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="fade-section">
+      <div class="name">Panuwat Ainphuwa (James)</div>
+      <p class="headline">Talent Acquisition Professional</p>
+
+      <p class="meta">
+        <span>Thonburi, Bangkok</span>
+        <span>TOEIC 825</span>
+      </p>
+
+      <p class="links">
+        <a href="mailto:panuwatin88@gmail.com">panuwatin88@gmail.com</a>
+        <a href="tel:0624979648">062-497-9648</a>
+        <a href="https://www.linkedin.com/in/james-panuwat-baa792228" target="_blank">LinkedIn</a>
+      </p>
+
+      <a href="https://drive.google.com/file/d/1inYDlFx3037-xoA_WcGM4QQTDcjaQMep/view?usp=sharing"
+         class="btn-resume" target="_blank">Download Résumé (PDF)</a>
+
+      <p class="intro">
+        A talent acquisition professional with experience in sourcing, screening, and coordinating interviews,
+        with a focus on tech and corporate roles. Strong ability to manage candidate pipelines, collaborate with hiring
+        managers, and deliver smooth, efficient recruitment processes in fast-paced environments.
+      </p>
+    </header>
+
+    <!-- EXPERIENCE -->
+    <section class="fade-section">
+      <div class="section-header">
+        <div class="section-index">01</div>
+        <h2>Professional Experience</h2>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Content Moderator</div>
+        <div class="item-meta">Accenture · May 2025 – Oct 2025</div>
+        <ul>
+          <li>Reviewed online content across social media platforms to ensure compliance with safety and community guidelines.</li>
+          <li>Handled sensitive cases with confidentiality and accuracy.</li>
+          <li>Collaborated with internal QA and policy teams to improve workflow consistency.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Recruitment Consultant</div>
+        <div class="item-meta">MagmaTech Solution · Jul 2024 – Apr 2025</div>
+        <ul>
+          <li>Sourced, screened, and shortlisted candidates across IT and non-IT functions.</li>
+          <li>Coordinated interview schedules and managed communication between hiring managers and candidates.</li>
+          <li>Maintained candidate pipelines and supported offer coordination.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Talent Acquisition Intern</div>
+        <div class="item-meta">Central Retail Corporation · Jan 2024 – Apr 2024</div>
+        <ul>
+          <li>Supported sourcing and pre-screening for multiple business units.</li>
+          <li>Coordinated job fairs, both on-site and virtual, including candidate flow and interview logistics.</li>
+          <li>Created hiring content and collaborated with branding teams to promote job openings.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="fade-section">
+      <div class="section-header">
+        <div class="section-index">02</div>
+        <h2>Education</h2>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Bachelor of Social Work</div>
+        <div class="item-meta">Thammasat University · 2020 – 2024</div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="fade-section">
+      <div class="section-header">
+        <div class="section-index">03</div>
+        <h2>Skills & Tools</h2>
+      </div>
+
+      <div class="tag-list">
+        <span class="tag">Talent Acquisition</span>
+        <span class="tag">Tech Recruitment</span>
+        <span class="tag">Sourcing</span>
+        <span class="tag">Screening</span>
+        <span class="tag">Interview Coordination</span>
+        <span class="tag">Candidate Experience</span>
+        <span class="tag">Pipeline Management</span>
+        <span class="tag">Job Ad Writing</span>
+        <span class="tag">Employer Branding Support</span>
+        <span class="tag">Manatal ATS</span>
+        <span class="tag">Microsoft Office</span>
+        <span class="tag">Google Workspace</span>
+        <span class="tag">Canva</span>
+        <span class="tag">ChatGPT / Claude / Gemini</span>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="fade-section">
+      <div class="section-header">
+        <div class="section-index">04</div>
+        <h2>Languages</h2>
+      </div>
+
+      <ul>
+        <li>Thai – Native</li>
+        <li>English – TOEIC 825</li>
+      </ul>
+    </section>
+
+    <footer class="fade-section">
+      © <span id="year"></span> Panuwat Ainphuwa (James)
+    </footer>
+  </div>
+
+  <script>
+    // Year update
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Scroll fade animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-section').forEach(sec => observer.observe(sec));
+  </script>
+
+</body>
+</html>
